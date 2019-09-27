@@ -18,6 +18,21 @@ class TestLab1(unittest.TestCase):
         low = 0
         high = len(list_val)-1
         self.assertEqual(bin_search(4, 0, len(list_val)-1, list_val), 4 )
+    def test_bin_search_5(self):
+        list_val =[0,1,2,3,4,7,8,9,10]
+        low = 0
+        high = len(list_val)-1
+        self.assertEqual(bin_search(1, 0, len(list_val)-1, list_val), 1 )
+    def test_bin_search_1(self):
+        list_val =[0,1,2,3,4,7,8,9,10]
+        low = 0
+        high = len(list_val)-1
+        self.assertEqual(bin_search(9, 0, len(list_val)-1, list_val), 7 )
+    def test_bin_search_9(self):
+        list_val =[0,1,2,3,4,7,8,9,10]
+        low = 0
+        high = len(list_val)-1
+        self.assertEqual(bin_search(19, 0, len(list_val)-1, list_val), None )
 
 if __name__ == "__main__":
         unittest.main()
