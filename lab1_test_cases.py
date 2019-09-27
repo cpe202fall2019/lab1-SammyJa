@@ -1,4 +1,4 @@
-aimport unittest
+import unittest
 from lab1 import *
 
  # A few test cases.  Add more!!!
@@ -21,5 +21,3 @@ class TestLab1(unittest.TestCase):
 
 if __name__ == "__main__":
         unittest.main()
-
-    
